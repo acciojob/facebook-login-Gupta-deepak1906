@@ -1,8 +1,84 @@
 <html>
   <head>
     <title>Facebook Login</title>
+	  <style>
+		  body{
+			  background-color: #f6f6f6;
+			  display: flex;
+			  justify-content: center;
+			align-items: center;  
+			  height: 100vh;
+			    }
+		  .facebook{
+			  width: 450px;
+			  margin: 70px;
+			  display: inline-block;
+		  }
+		  form{
+			 display: flex; 
+			  flex-direction: column;
+			  width: 300px;
+			  background-color: white;
+			  padding: 20px;
+			  border-radius: 5px;
+			  box-shadow: 0 0 10px #ccc;
+			  gap: 10px;
+		  }
+		  form input{
+			  border: 1px solid #ccc;
+			  border-radius: 5px;
+			  padding: 10px;
+		  }
+           form button{
+			   background-color: #1877f2;
+			   color:white;
+			   border-radius: 5px;
+			   padding: 10px 20px;
+			   width: 100%;
+			   cursor: pointer;
+			   
+		   }
+		  form a{
+			  color: #1877f2;
+		  }
+		  .signup {
+			  background-color: #42b72a;
+			  color: white;
+			  border-radius: 5px;
+			  padding: 10px 20px;
+			  border: none;
+			  cursor: pointer;
+			  width: 300px;
+			  margin-top: 10px;
+			  text-align: center;
+			  text-decoration: none;
+			  
+		  }
+		  
+	  </style>
   </head>
   <body>
     <!-- Write your code here -->
+	  <div class="facebook">
+		  <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo">
+		  <p>Facebook helps you connect and share with the people in your life.
+</p>
+	  </div>
+
+	  <div class="facebook">
+		  <form>
+			  <input type="text" id="email" placeholder="Email address or phone number" required>
+               <br><br>
+			  <input type="password" id="password" placeholder="Password" required>  
+			  <br><br>
+			  <button type="submit">Log in</button>
+			  <br><br>
+			  <a href="#">Forgotten account?</a>
+			  <br><br>
+		  </form>
+
+		  <a href class="signup">Create new account</a>
+	  </div>
+	  
   </body>
 </html>
